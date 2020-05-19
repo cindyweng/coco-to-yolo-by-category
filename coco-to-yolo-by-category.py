@@ -16,7 +16,7 @@ print('COCO categories: \n{}\n'.format(' '.join(nms)))
 
 
 # Replace category with whatever is of interest to you
-cat = 'person'
+cat = "person"
 catIds = coco.getCatIds(catNms=[cat])
 imgIds = coco.getImgIds(catIds=catIds )
 images = coco.loadImgs(imgIds)
