@@ -61,7 +61,7 @@ for im in images:
             y = y * dh
             h = h * dh
             
-            # Note: This assumes a single-category 
+            # Note: This assumes a single-category dataset, and thus the "0" at the beginning of each line.
             mystring = str("0 " + str(truncate(x, 7)) + " " + str(truncate(y, 7)) + " " + str(truncate(w, 7)) + " " + str(truncate(h, 7)))
             myfile.write(mystring)
             myfile.write("\n")
